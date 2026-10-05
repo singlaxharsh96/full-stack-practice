@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+.navbar {
+  min-height: 72px;
+  padding: 0 7%;
+  background: #2f65a5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 13px;
+  border-radius: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.main-content {
+  width: min(900px, 92%);
+  margin: 45px auto;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d7dce2;
+  border-radius: 12px;
+  padding: 35px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.wide-card {
+  min-height: 430px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8f0fb;
+  color: #2f65a5;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 14px 0 8px;
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.count-box {
+  width: 150px;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #2f65a5;
+  border-radius: 8px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 11px 17px;
+  background: #2f65a5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.secondary {
+  background: #667085;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #9aa3ad;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #a9c9ef;
+  border-color: #2f65a5;
+}
+
+.saved-name,
+.task-count {
+  margin-top: 20px;
+}
+
+.small-note {
+  color: #777;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.sub-navigation {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+}
+
+.sub-link {
+  color: #2f65a5;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.sub-link:hover,
+.sub-link.active {
+  background: #e8f0fb;
+  font-weight: bold;
+}
+
+.page-area {
+  min-height: 230px;
+}
+
+.student-list,
+.task-list {
+  padding-left: 25px;
+  line-height: 2;
+}
+
+.empty-message {
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 6px;
+  color: #666;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 18px 5%;
+  }
+
+  .main-content {
+    margin: 25px auto;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+}
